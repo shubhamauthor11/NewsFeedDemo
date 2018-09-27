@@ -21,7 +21,6 @@ import butterknife.ButterKnife;
 
 public class TopNewsFeedFragment extends Fragment {
 
-    private NewsAdapter adapter;
     private View rootView = null;
     private List<NewsFeedModel> arrListData = new ArrayList<NewsFeedModel>();
     private AppDatabase myDb;
