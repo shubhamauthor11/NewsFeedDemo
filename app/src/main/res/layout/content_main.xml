@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".60"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:layout_weight=".10"
+                android:textStyle="bold"
+                android:text="Kripto paralara BIS etkisi"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:layout_weight=".20"
+                android:text="SVÇRE merkezli BISin yaynlad raporda, piyasalarn en çok kripto para birimleri ve ICOlara getirilen yasaklama ve kstlama haberlerinden etkilendii belirtilirken, kripto varlklarn yasal durumunu ilgilendiren kararlarn piyasalarda ani hareketlilie sebep olabilece… [+1555 chars]"
+                android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutstaying_since"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_weight=".025">
+
+            <TextView
+                android:id="@+id/tv_publishedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:textColor="@android:color/black"
+                android:text="At 2018-09-25T07:12:14Z" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:text="By : hurriyet.com.tr" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_descriptionlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="Read full story"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_weight=".025"/>
+
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="Source : Hurriyet.com.tr"
+                android:textColor="@android:color/black"
+                android:layout_weight=".050"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
